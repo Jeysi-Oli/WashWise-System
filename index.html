@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WashWise - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">WashWise</div>
+
+    <nav>
+        <a href="index.html" class="active">Dashboard</a>
+        <a href="customer.html">Customer</a>
+        <a href="services.html">Services</a>
+        <a href="orders.html">Orders</a>
+        <a href="payments.html">Payments</a>
+    </nav>
+</header>
+
+
+<main class="page">
+
+    <div class="page-header">
+        <h1>Dashboard</h1>
+        <p>Welcome to WashWise Laundry Management System.</p>
+    </div>
+
+
+    <div class="dashboard-cards">
+
+        <div class="dashboard-card">
+            <h3>Customers</h3>
+            <p id="customerCount">0</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Total Orders</h3>
+            <p id="orderCount">0</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Services</h3>
+            <p>4</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Paid Orders</h3>
+            <p id="paidCount">0</p>
+        </div>
+
+    </div>
+
+
+    <div class="dashboard-content">
+
+        <!-- QUICK ACTIONS -->
+        <div class="dashboard-box">
+
+            <h2>Quick Actions</h2>
+
+            <div class="quick-actions">
+
+                <a href="customer.html">
+                    Customer Information
+                </a>
+
+                <a href="services.html">
+                    View Services
+                </a>
+
+                <a href="orders.html">
+                    Manage Orders
+                </a>
+
+                <a href="payments.html">
+                    Manage Payments
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ORDER TRACKING -->
+        <div id="orderTrackingContainer"></div>
+
+    </div>
+
+</main>
+
+
+<footer>
+    <p>© 2026 WashWise Laundry Management System</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
