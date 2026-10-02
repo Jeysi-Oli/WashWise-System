@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -120,4 +121,128 @@
 <script src="script.js"></script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WashWise - Orders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">WashWise</div>
+
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="customer.html">Customer</a>
+        <a href="services.html">Services</a>
+        <a href="orders.html" class="active">Orders</a>
+        <a href="payments.html">Payments</a>
+    </nav>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open quick actions" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+
+<main class="page">
+
+    <div class="page-header">
+        <h1>Orders</h1>
+        <p>Create new orders and track their status.</p>
+    </div>
+
+    <div class="content-box">
+        <h2>New Order</h2>
+
+        <form>
+            <label for="customerName">Customer Name</label>
+            <input type="text" id="customerName" placeholder="Enter customer name">
+
+            <label for="contact">Contact Number</label>
+            <input type="text" id="contact" placeholder="Enter contact number">
+
+            <label for="address">Address</label>
+            <input type="text" id="address" placeholder="Enter address">
+
+            <label for="laundryType">Laundry Service</label>
+            <select id="laundryType">
+                <option value="">Select service</option>
+                <option value="Wash">Wash - ₱40/kg</option>
+                <option value="Wash and Dry">Wash and Dry - ₱60/kg</option>
+                <option value="Dry Clean">Dry Clean - ₱80/kg</option>
+                <option value="Ironing">Ironing - ₱30/kg</option>
+            </select>
+
+            <label for="weight">Weight (kg)</label>
+            <input type="number" id="weight" min="1" placeholder="Enter weight">
+
+            <label for="pickup">Pickup Date</label>
+            <input type="date" id="pickup">
+
+            <label for="price">Total Price</label>
+            <input type="text" id="price" readonly placeholder="Click Calculate Price">
+
+            <button type="button" id="calculateBtn">Calculate Price</button>
+            <button type="button" id="orderBtn">Place Order</button>
+        </form>
+
+        <p id="orderMessage"></p>
+    </div>
+
+    <div class="content-box">
+        <h2>Order List</h2>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Service</th>
+                        <th>Weight</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="orderTable"></tbody>
+            </table>
+        </div>
+    </div>
+
+</main>
+
+
+<footer>
+    <p>© 2026 WashWise Laundry Management System</p>
+</footer>
+
+
+<!-- Quick Actions drawer -->
+<div class="overlay" id="overlay"></div>
+
+<aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-header">
+        <h2>Quick Actions</h2>
+        <button class="close-btn" id="closeBtn" aria-label="Close menu">&times;</button>
+    </div>
+
+    <div class="quick-actions">
+        <a href="customer.html">Customer Information</a>
+        <a href="services.html">View Services</a>
+        <a href="orders.html">Manage Orders</a>
+        <a href="payments.html">Manage Payments</a>
+    </div>
+</aside>
+
+<script src="script.js"></script>
+
+</body>
+>>>>>>> 04a3580 (Initial commit)
 </html>

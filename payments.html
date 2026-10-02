@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -93,4 +94,101 @@
 <script src="script.js"></script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WashWise - Payments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">WashWise</div>
+
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="customer.html">Customer</a>
+        <a href="services.html">Services</a>
+        <a href="orders.html">Orders</a>
+        <a href="payments.html" class="active">Payments</a>
+    </nav>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open quick actions" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+
+<main class="page">
+
+    <div class="page-header">
+        <h1>Payments</h1>
+        <p>Record payments for unpaid orders.</p>
+    </div>
+
+    <div class="content-box">
+        <h2>Record Payment</h2>
+
+        <form>
+            <label for="paymentOrder">Order</label>
+            <select id="paymentOrder">
+                <option value="">Select order</option>
+            </select>
+
+            <label for="paymentMethod">Payment Method</label>
+            <select id="paymentMethod">
+                <option value="">Select method</option>
+                <option value="Cash">Cash</option>
+                <option value="GCash">GCash</option>
+                <option value="Maya">Maya</option>
+                <option value="Card">Card</option>
+            </select>
+
+            <button type="button" id="paymentBtn">Record Payment</button>
+        </form>
+
+        <p id="paymentMessage"></p>
+    </div>
+
+    <div class="content-box">
+        <h2>Notifications</h2>
+
+        <div id="notificationBox">
+            <p class="tracking-placeholder">No notifications yet.</p>
+        </div>
+    </div>
+
+</main>
+
+
+<footer>
+    <p>© 2026 WashWise Laundry Management System</p>
+</footer>
+
+
+<!-- Quick Actions drawer -->
+<div class="overlay" id="overlay"></div>
+
+<aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-header">
+        <h2>Quick Actions</h2>
+        <button class="close-btn" id="closeBtn" aria-label="Close menu">&times;</button>
+    </div>
+
+    <div class="quick-actions">
+        <a href="customer.html">Customer Information</a>
+        <a href="services.html">View Services</a>
+        <a href="orders.html">Manage Orders</a>
+        <a href="payments.html">Manage Payments</a>
+    </div>
+</aside>
+
+<script src="script.js"></script>
+
+</body>
+>>>>>>> 04a3580 (Initial commit)
 </html>
