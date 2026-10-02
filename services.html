@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WashWise - Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">WashWise</div>
+
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="customer.html">Customer</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="orders.html">Orders</a>
+        <a href="payments.html">Payments</a>
+    </nav>
+</header>
+
+
+<main class="page">
+
+    <div class="page-header">
+        <h1>Laundry Services</h1>
+        <p>Select a laundry service for your order.</p>
+    </div>
+
+
+    <div class="service-grid">
+
+        <div class="service-card">
+
+            <h2>Wash</h2>
+
+            <p class="price">
+                ₱40 / kg
+            </p>
+
+            <button
+                onclick="selectService('Wash')">
+                Select
+            </button>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <h2>Wash and Dry</h2>
+
+            <p class="price">
+                ₱60 / kg
+            </p>
+
+            <button
+                onclick="selectService('Wash and Dry')">
+                Select
+            </button>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <h2>Dry Clean</h2>
+
+            <p class="price">
+                ₱80 / kg
+            </p>
+
+            <button
+                onclick="selectService('Dry Clean')">
+                Select
+            </button>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <h2>Ironing</h2>
+
+            <p class="price">
+                ₱30 / kg
+            </p>
+
+            <button
+                onclick="selectService('Ironing')">
+                Select
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="selected-service">
+
+        <h2>Selected Service</h2>
+
+        <p id="selectedService">
+            No service selected.
+        </p>
+
+    </div>
+
+</main>
+
+
+<footer>
+    <p>© 2026 WashWise Laundry Management System</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
