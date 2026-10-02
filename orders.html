@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WashWise - Orders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">WashWise</div>
+
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="customer.html">Customer</a>
+        <a href="services.html">Services</a>
+        <a href="orders.html" class="active">Orders</a>
+        <a href="payments.html">Payments</a>
+    </nav>
+</header>
+
+
+<main class="page">
+
+    <div class="page-header">
+        <h1>Orders</h1>
+        <p>Create and manage laundry orders.</p>
+    </div>
+
+
+    <div class="content-box">
+
+        <h2>Place Laundry Order</h2>
+
+        <form id="orderForm">
+
+            <label>Customer Name</label>
+
+            <input
+                type="text"
+                id="orderCustomer"
+                placeholder="Enter customer name"
+                required
+            >
+
+
+            <label>Laundry Service</label>
+
+            <select id="orderService" required>
+
+                <option value="">
+                    Select service
+                </option>
+
+                <option value="Wash">
+                    Wash - ₱40/kg
+                </option>
+
+                <option value="Wash and Dry">
+                    Wash and Dry - ₱60/kg
+                </option>
+
+                <option value="Dry Clean">
+                    Dry Clean - ₱80/kg
+                </option>
+
+                <option value="Ironing">
+                    Ironing - ₱30/kg
+                </option>
+
+            </select>
+
+
+            <label>Weight (kg)</label>
+
+            <input
+                type="number"
+                id="orderWeight"
+                min="1"
+                placeholder="Enter weight"
+                required
+            >
+
+
+            <label>Estimated Price</label>
+
+            <input
+                type="text"
+                id="orderPrice"
+                placeholder="₱0"
+                readonly
+            >
+
+
+            <button
+                type="button"
+                id="calculateOrder">
+                Calculate Price
+            </button>
+
+
+            <button type="submit">
+                Confirm Order
+            </button>
+
+
+            <p id="orderMessage"></p>
+
+        </form>
+
+    </div>
+
+
+    <div class="content-box">
+
+        <h2>Order Records</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Service</th>
+                    <th>Weight</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                    <th>Payment</th>
+                </tr>
+
+            </thead>
+
+
+            <tbody id="orderTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</main>
+
+
+<footer>
+    <p>© 2026 WashWise Laundry Management System</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

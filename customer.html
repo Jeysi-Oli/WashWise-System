@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WashWise - Customer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">WashWise</div>
+
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="customer.html" class="active">Customer</a>
+        <a href="services.html">Services</a>
+        <a href="orders.html">Orders</a>
+        <a href="payments.html">Payments</a>
+    </nav>
+</header>
+
+
+<main class="page">
+
+    <div class="page-header">
+        <h1>Customer Information</h1>
+        <p>Add and manage customer information.</p>
+    </div>
+
+
+    <div class="content-box">
+
+        <h2>Customer Details</h2>
+
+        <form id="customerForm">
+
+            <label>Customer Name</label>
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Enter customer name"
+                required
+            >
+
+
+            <label>Contact Number</label>
+            <input
+                type="text"
+                id="contact"
+                placeholder="Enter contact number"
+                required
+            >
+
+
+            <label>Address</label>
+            <input
+                type="text"
+                id="address"
+                placeholder="Enter address"
+                required
+            >
+
+
+            <button type="submit">
+                Save Customer
+            </button>
+
+            <p id="customerMessage"></p>
+
+        </form>
+
+    </div>
+
+
+    <div class="content-box">
+
+        <h2>Saved Customer</h2>
+
+        <div id="customerDisplay">
+
+            <p>No customer information saved yet.</p>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+    <p>© 2026 WashWise Laundry Management System</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
