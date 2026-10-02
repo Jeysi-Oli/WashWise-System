@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WashWise - Customer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">WashWise</div>
+
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="customer.html" class="active">Customer</a>
+        <a href="services.html">Services</a>
+        <a href="orders.html">Orders</a>
+        <a href="payments.html">Payments</a>
+    </nav>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open quick actions" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+
+<main class="page">
+
+    <div class="page-header">
+        <h1>Customer Information</h1>
+        <p>Save and manage your laundry customers.</p>
+    </div>
+
+    <div class="content-box">
+        <h2>Add Customer</h2>
+
+        <form>
+            <label for="custName">Full Name</label>
+            <input type="text" id="custName" placeholder="Enter full name">
+
+            <label for="custContact">Contact Number</label>
+            <input type="text" id="custContact" placeholder="Enter contact number">
+
+            <label for="custAddress">Address</label>
+            <input type="text" id="custAddress" placeholder="Enter address">
+
+            <button type="button" id="customerBtn">Save Customer</button>
+        </form>
+
+        <p id="customerMessage"></p>
+    </div>
+
+    <div class="content-box">
+        <h2>Customer List</h2>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th>Address</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="customerTable"></tbody>
+            </table>
+        </div>
+    </div>
+
+</main>
+
+
+<footer>
+    <p>© 2026 WashWise Laundry Management System</p>
+</footer>
+
+
+<!-- Quick Actions drawer -->
+<div class="overlay" id="overlay"></div>
+
+<aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-header">
+        <h2>Quick Actions</h2>
+        <button class="close-btn" id="closeBtn" aria-label="Close menu">&times;</button>
+    </div>
+
+    <div class="quick-actions">
+        <a href="customer.html">Customer Information</a>
+        <a href="services.html">View Services</a>
+        <a href="orders.html">Manage Orders</a>
+        <a href="payments.html">Manage Payments</a>
+    </div>
+</aside>
+
+<script src="script.js"></script>
+
+</body>
+</html>

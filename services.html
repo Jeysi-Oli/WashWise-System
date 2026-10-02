@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WashWise - Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">WashWise</div>
+
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="customer.html">Customer</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="orders.html">Orders</a>
+        <a href="payments.html">Payments</a>
+    </nav>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open quick actions" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+
+<main class="page">
+
+    <div class="page-header">
+        <h1>Services</h1>
+        <p>Choose a laundry service for your order.</p>
+    </div>
+
+    <div class="service-grid">
+        <div class="service-card">
+            <h2>Wash</h2>
+            <p class="price">₱40 / kg</p>
+            <p>Washing only.</p>
+            <button type="button" class="select-service" data-service="Wash" data-price="40">Select</button>
+        </div>
+        <div class="service-card">
+            <h2>Wash and Dry</h2>
+            <p class="price">₱60 / kg</p>
+            <p>Washing and drying.</p>
+            <button type="button" class="select-service" data-service="Wash and Dry" data-price="60">Select</button>
+        </div>
+        <div class="service-card">
+            <h2>Dry Clean</h2>
+            <p class="price">₱80 / kg</p>
+            <p>For delicate clothes.</p>
+            <button type="button" class="select-service" data-service="Dry Clean" data-price="80">Select</button>
+        </div>
+        <div class="service-card">
+            <h2>Ironing</h2>
+            <p class="price">₱30 / kg</p>
+            <p>Pressed and neatly folded.</p>
+            <button type="button" class="select-service" data-service="Ironing" data-price="30">Select</button>
+        </div>
+    </div>
+
+    <div class="selected-service" id="selectedBox" hidden>
+        <h2>Selected Service</h2>
+        <p><strong id="selectedName"></strong> - <span id="selectedPrice"></span></p>
+        <p style="margin-top:10px;">Next: <a href="orders.html">create an order</a> with this service.</p>
+    </div>
+
+</main>
+
+
+<footer>
+    <p>© 2026 WashWise Laundry Management System</p>
+</footer>
+
+
+<!-- Quick Actions drawer -->
+<div class="overlay" id="overlay"></div>
+
+<aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-header">
+        <h2>Quick Actions</h2>
+        <button class="close-btn" id="closeBtn" aria-label="Close menu">&times;</button>
+    </div>
+
+    <div class="quick-actions">
+        <a href="customer.html">Customer Information</a>
+        <a href="services.html">View Services</a>
+        <a href="orders.html">Manage Orders</a>
+        <a href="payments.html">Manage Payments</a>
+    </div>
+</aside>
+
+<script src="script.js"></script>
+
+</body>
+</html>
